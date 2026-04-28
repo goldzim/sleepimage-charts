@@ -11,6 +11,11 @@
   h2 { text-align: center; color: #555; margin: 30px 0 10px; }
   .subtitle { text-align: center; color: #666; margin-bottom: 20px; font-size: 14px; }
   .chart-container { background: white; border-radius: 8px; padding: 15px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+  @media print {
+    body { background: white; padding: 10px; }
+    .chart-container { break-inside: avoid; page-break-inside: avoid; box-shadow: none; margin-bottom: 10px; }
+    h2 { break-after: avoid; page-break-after: avoid; }
+  }
 </style>
 </head>
 <body>
